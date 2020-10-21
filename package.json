@@ -5,12 +5,14 @@
     "website",
     "website-1.x",
     "website-1.x-migrated",
-    "packages/docusaurus-init/templates/*"
+    "packages/docusaurus-init/templates/*",
+    "cloud-canal"
   ],
   "scripts": {
     "start": "yarn build:packages && yarn start:v2",
     "start:v1": "yarn workspace docusaurus-1-website start",
     "start:v2": "yarn workspace docusaurus-2-website start",
+    "start:canal": "yarn workspace cloud-canal-website start",
     "start:v2:watch": "nodemon --watch \"./packages/*/lib/**/*.*\" --exec \"yarn start:v2\"",
     "start:v2:baseUrl": "yarn workspace docusaurus-2-website start:baseUrl",
     "start:v2:bootstrap": "yarn workspace docusaurus-2-website start:bootstrap",
@@ -19,6 +21,7 @@
     "build:packages": "lerna run build --no-private",
     "build:v1": "yarn workspace docusaurus-1-website build",
     "build:v2": "yarn workspace docusaurus-2-website build",
+    "build:canal": "yarn workspace cloud-canal-website build",
     "build:v2:baseUrl": "yarn workspace docusaurus-2-website build:baseUrl",
     "build:v2:blogOnly": "yarn workspace docusaurus-2-website build:blogOnly",
     "serve:v1": "serve website-1.x/build/docusaurus",

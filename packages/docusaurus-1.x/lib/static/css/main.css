@@ -97,9 +97,8 @@ video {
 
 /* Base scaffolding taken from Markswatch theme */
 body {
-  color: #24292e;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #333;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   line-height: 1.5;
   -ms-text-size-adjust: 100%;
@@ -158,7 +157,7 @@ h4,
 h5,
 h6 {
   color: inherit;
-  font-weight: 600;
+  /*font-weight: 600;*/
   line-height: 1.25;
   margin-bottom: 16px;
   margin-top: 1.5em;
@@ -269,7 +268,7 @@ table td {
 table th {
   background-color: inherit;
   color: inherit;
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 
 table td {
@@ -296,7 +295,7 @@ code {
   background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
   color: inherit;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     'Courier New', monospace;
   font-size: 85%;
   margin: 0;
@@ -330,7 +329,7 @@ kbd {
   box-shadow: inset 0 -1px 0 #c6cbd1;
   color: #444d56;
   display: inline-block;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     'Courier New', monospace;
   font-size: 68.75%;
   line-height: 10px;
@@ -649,15 +648,21 @@ blockquote {
 }
 
 .mainContainer .wrapper .post .postHeaderTitle {
-  margin-top: 0;
-  padding: 0;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
+  margin: 0.67em 0;
+  line-height: 1.25;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  color: #142848;
 }
 
 .docsContainer .wrapper .post .postHeader:before,
 .docsContainer .wrapper .post .postHeaderTitle:before {
   content: '';
   display: block;
-  height: 90px; /* fixed header height and empty space below it */
+  height: 80px; /* fixed header height and empty space below it */
   margin-top: -90px; /* negative fixed header height and empty space below it  */
   visibility: hidden;
   pointer-events: none;
@@ -774,7 +779,7 @@ blockquote {
 }
 
 .fixedHeaderContainer header img {
-  height: 100%;
+  height: 22px;
   margin-right: 10px;
 }
 
@@ -1371,7 +1376,7 @@ input::placeholder {
     flex-direction: column;
     flex-grow: 1;
     min-height: calc(100vh - 50px);
-    padding-top: 50px;
+    padding-top: 100px;
   }
 
   /* those make the footer sticky and work even in IE 11 */
@@ -1653,6 +1658,8 @@ input::placeholder {
   margin-top: -4px;
   transform: rotate(90deg);
   transition: transform 200ms linear;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .collapsible .arrow.rotate {
@@ -1676,7 +1683,7 @@ input::placeholder {
     position: -webkit-sticky;
     position: sticky;
     overflow-y: auto;
-    top: 50px; /* Height of navbar */
+    top: 100px; /* Height of navbar */
   }
 }
 
@@ -1714,7 +1721,7 @@ input::placeholder {
   }
 
   .separateOnPageNav .docsNavContainer {
-    flex: 0 0 240px;
+    flex: 0 0 200px;
   }
 }
 
@@ -1732,7 +1739,7 @@ input::placeholder {
 
 @media only screen and (min-width: 1024px) {
   .toc {
-    padding: 40px 0;
+    padding: 30px 0;
   }
 }
 
@@ -1749,6 +1756,8 @@ input::placeholder {
 .toc .toggleNav {
   color: #393939;
   position: relative;
+  padding-left: 20px;
+  /*border-right: 1px solid #e0e0e0;*/
 }
 
 .toc .toggleNav .navToggle {
@@ -1800,7 +1809,7 @@ input::placeholder {
 }
 
 .toc .toggleNav .navGroup {
-  margin-bottom: 16px;
+  /*margin-bottom: 16px;*/
 }
 
 .toc .toggleNav .subNavGroup {
@@ -1808,26 +1817,35 @@ input::placeholder {
 }
 
 .toc .toggleNav .navGroup .navGroupCategoryTitle {
-  color: #393939;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.2em;
-  margin-bottom: 8px;
+  color: #333;
+  /*line-height: 32px;*/
+  /*margin-bottom: 1rem;*/
   margin-top: 0;
+  padding: 14px 24px;
+  position: relative;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 16px;
+  padding-left: 0 !important;
+  margin-bottom: 0;
 }
 
 .toc .toggleNav .navGroup .navGroupSubcategoryTitle {
   color: #393939;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.5;
+  /*font-size: 14px;*/
+  /*font-weight: 500;*/
+  /*line-height: 1.5;*/
   margin-bottom: 0;
   margin-top: 0;
-  padding: 4px 0;
+  /*padding: 4px 0;*/
 }
 
 .toc .toggleNav .navGroup .navListItem {
   margin: 0;
+  padding-left: 8px !important;
+  font-size: 12px !important;
+  padding: 4px 0;
+  font-weight: 400;
 }
 
 .toc .toggleNav .navGroup h3 i:not(:empty) {
@@ -1843,6 +1861,7 @@ input::placeholder {
 
 .toc .toggleNav ul {
   padding: 0 8px;
+  margin-bottom: 0;
 }
 
 .docsSliderActive .toc .toggleNav ul {
@@ -1856,11 +1875,12 @@ input::placeholder {
 
 .toc .toggleNav ul li a {
   border: none;
-  color: #717171;
   display: block;
   font-size: 14px;
   padding: 4px 0;
   transition: color 0.3s;
+  font-weight: 400;
+  color: #333;
 }
 
 .toc .toggleNav ul li a:hover,
@@ -1884,7 +1904,7 @@ input::placeholder {
   border: 0;
   flex-grow: 1;
   font-size: 16px;
-  font-weight: 600;
+  /*font-weight: 600;*/
   line-height: 32px;
   margin: 0;
   padding: 0;
@@ -1997,12 +2017,12 @@ input::placeholder {
 }
 
 .onPageNav a {
-  color: #717171;
+  color: #595959;
 }
 
 .onPageNav .toc-headings > li > a.active,
 .onPageNav .toc-headings > li > a.hover {
-  font-weight: 600;
+  /*font-weight: 600;*/
   color: $primaryColor;
 }
 
@@ -2075,6 +2095,8 @@ input::placeholder {
 
     .separateOnPageNav .toc {
       width: auto;
+      background-color: #f7f7f7;
+      border-right: 1px solid #e8e8e8;
     }
 
     .separateOnPageNav.sideNavVisible .navPusher .mainContainer {
@@ -2091,11 +2113,11 @@ input::placeholder {
       overflow-y: auto;
       position: -webkit-sticky;
       position: sticky;
-      top: 90px;
+      top: 140px;
     }
 
     .onPageNav > .toc-headings {
-      border-left: 1px solid #e0e0e0;
+      border-left: 2px solid #e8e8e8;
       padding: 10px 0 2px 15px;
     }
 
@@ -2285,23 +2307,24 @@ input::placeholder {
 /* End of Showcase */
 
 /* Start of Footer */
-.nav-footer {
-  background: #20232a;
+ {
+  /*background: #20232a;.nav-footer*/
   border: none;
   color: #202020;
   font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
-  line-height: 24px;
-  padding-bottom: 2em;
-  padding-top: 2em;
+  /*line-height: 24px;*/
+  /*padding-bottom: 2em;*/
+  /*padding-top: 2em;*/
   position: relative;
 }
 
 @media only screen and (min-width: 1024px) {
   .nav-footer {
     flex-shrink: 0;
+    padding: 5px 0;
   }
 }
 
@@ -2396,8 +2419,11 @@ input::placeholder {
 }
 
 .nav-footer .copyright {
-  color: rgba(255, 255, 255, 0.4);
+  /*color: rgba(255, 255, 255, 0.4);*/
+  /*background: #ffffff;*/
   text-align: center;
+  color: rgb(170, 170, 170);
+  font-size: 12px;
 }
 
 .nav-footer .social {
@@ -2456,4 +2482,89 @@ input::placeholder {
   margin-top: 0;
   border-radius: 0;
   box-shadow: none;
+}
+article p {
+  font-size: 14px;
+  color: rgb(64, 64, 64);
+  line-height: 1.74;
+  letter-spacing: 0.008em;
+  outline-style: none;
+  overflow-wrap: break-word;
+  font-weight: 400;
+}
+
+.home-header {
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.13);
+}
+
+.home-header-container {
+  width: 1506px;
+  margin: 0 auto;
+  line-height: 100px;
+  vertical-align: middle
+}
+.home-header-container>header>a{
+  display: inline-block;
+}
+
+.home-header-menu {
+  display: inline-block;
+  margin-left: 93px;
+}
+
+.home-header-menu-item {
+  display: inline-block;
+  width: 112px
+}
+
+.home-header-menu-item a {
+  color: #51459E;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+}
+
+.home-header-menu-item-active a {
+  border-bottom: 4px solid #FF7C00;
+  color: #FF7C00;
+  padding-bottom: 10px;
+}
+.home-header-menu-item-active {
+  border-bottom: 4px solid #FF7C00;
+  color: #FF7C00!important;
+  padding-bottom: 10px;
+}
+
+.home-header-action {
+  float: right;
+}
+
+.home-header-action a {
+  color: #51459E;
+  font-size: 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  margin-right: 34px
+}
+
+.home-header-action .btn {
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+  background: #FF7C00;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0 14px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-block;
 }

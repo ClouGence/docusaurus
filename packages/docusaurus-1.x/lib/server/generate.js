@@ -45,6 +45,7 @@ async function execute() {
   function writeFileAndCreateFolder(file, content) {
     mkdirp.sync(path.dirname(file));
     fs.writeFileSync(file, content);
+    console.log('pudding',file);
 
     // build extra file for extension-less url if "cleanUrl" siteConfig is true
     if (siteConfig.cleanUrl && file.indexOf('index.html') === -1) {
@@ -81,6 +82,7 @@ async function execute() {
     const rawContent = metadataUtils.extractMetadata(file).rawContent;
     const str = docs.getMarkup(rawContent, mdToHtml, metadata, siteConfig);
     const targetFile = join(buildDir, metadata.permalink);
+    console.log('pipi',targetFile,metadata);
     writeFileAndCreateFolder(targetFile, str);
 
     // generate english page redirects when languages are enabled
@@ -284,11 +286,15 @@ async function execute() {
   const css = await autoPrefixCss(minifiedCSS);
   fs.writeFileSync(mainCss, css);
 
+  // copy headerlink page
+
+
+
   // compile/copy pages from user
   const enabledLanguages = env.translation
     .enabledLanguages()
     .map((lang) => lang.tag);
-  const userPagesDir = join(CWD, 'pages');
+  const userPagesDir = join(CWD, 'test');
   files = glob.sync(join(userPagesDir, '**'));
   files.forEach((file) => {
     // Why normalize? In case we are on Windows.

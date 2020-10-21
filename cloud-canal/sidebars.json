@@ -1,0 +1,32 @@
+{
+  "docs": {
+    "产品介绍": [
+      "product_intro",
+      "product_advantage",
+      "product_func",
+      "product_arch",
+      "product_price",
+      "product_spec_perf"
+    ],
+    "快速上手": [
+      "quick_start"
+    ],
+    "操作手册": [
+      "aliyun_ram_sts_auth",
+      "create_dingding_group",
+      "add_worker_aliyun_ecs",
+      "add_worker_self_maintain",
+      "add_aliyun_ds",
+      "add_self_maintain_ds",
+      "create_data_job"
+    ],
+    "参考文档": [
+      "product_nouns",
+      "error_code",
+      "region_mapping"
+    ],
+    "商业协议": [
+      "sla"
+    ]
+  }
+}

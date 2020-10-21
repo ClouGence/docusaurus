@@ -92,12 +92,12 @@ class LanguageDropDown extends React.Component {
       <span>
         <li key="languages">
           <a id="languages-menu" href="#">
-            <img
-              className="languages-icon"
-              src={`${this.props.baseUrl}img/language.svg`}
-              alt="Languages icon"
-            />
-            {currentLanguage}
+            {/*<img*/}
+            {/*  className="languages-icon"*/}
+            {/*  src={`${this.props.baseUrl}img/language.svg`}*/}
+            {/*  alt="Languages icon"*/}
+            {/*/>*/}
+            {/*{currentLanguage}*/}
           </a>
           <div id="languages-dropdown" className="hide">
             <ul id="languages-dropdown-items">{enabledLanguages}</ul>
@@ -298,14 +298,11 @@ class HeaderNav extends React.Component {
         ? `${this.props.language}/versions${extension}`
         : `versions${extension}`);
     return (
-      <div className="fixedHeaderContainer">
-        <div className="headerWrapper wrapper">
+      <div className="home-header">
+        <div className="home-header-container">
           <header>
             <a
-              href={
-                this.props.baseUrl +
-                (env.translation.enabled ? this.props.language : '')
-              }>
+              href="https://www.clougence.com/">
               {siteConfig.headerIcon && (
                 <img
                   className="logo"
@@ -322,7 +319,31 @@ class HeaderNav extends React.Component {
                 <h3>{this.props.version || env.versioning.defaultVersion}</h3>
               </a>
             )}
-            {this.renderResponsiveNav()}
+            <div className="home-header-menu">
+              <span className="home-header-menu-item">
+                <a
+                  href="https://www.clougence.com/">首页</a>
+              </span>
+              <span className="home-header-menu-item">
+                <a
+                  href="https://www.clougence.com/home/cloudCanal">产品介绍</a>
+              </span>
+              <span className="home-header-menu-item">
+                <a
+                  href="https://www.clougence.com//home/solution">解决方案</a>
+              </span>
+              <span className="home-header-menu-item">
+                <a
+                href="https://www.clougence.com/home/about">关于我们</a>
+              </span>
+            </div>
+            <div className="home-header-action">
+              <a className="home-header-menu-item-active">文档</a>
+              <a className="btn" href="https://cloudcanal.clougence.com/data/job/list">
+              免费体验CloudCanal
+            </a>
+        </div>
+            {/*{this.renderResponsiveNav()}*/}
           </header>
         </div>
       </div>

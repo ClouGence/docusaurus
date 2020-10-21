@@ -92,19 +92,19 @@ export default async function start(
   let config: webpack.Configuration = merge(createClientConfig(props), {
     plugins: [
       // Generates an `index.html` file with the <script> injected.
-      new HtmlWebpackPlugin({
-        template: path.resolve(
-          __dirname,
-          '../client/templates/index.html.template.ejs',
-        ),
-        // So we can define the position where the scripts are injected.
-        inject: false,
-        filename: 'index.html',
-        title: siteConfig.title,
-        headTags,
-        preBodyTags,
-        postBodyTags,
-      }),
+      // new HtmlWebpackPlugin({
+      //   template: path.resolve(
+      //     __dirname,
+      //     '../client/templates/index.html.template.ejs',
+      //   ),
+      //   // So we can define the position where the scripts are injected.
+      //   inject: false,
+      //   filename: 'index.html',
+      //   title: siteConfig.title,
+      //   headTags,
+      //   preBodyTags,
+      //   postBodyTags,
+      // }),
       // This is necessary to emit hot updates for webpack-dev-server.
       new HotModuleReplacementPlugin(),
     ],

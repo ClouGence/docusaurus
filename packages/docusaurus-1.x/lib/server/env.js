@@ -25,7 +25,7 @@ class Translation {
       {
         enabled: true,
         name: 'English',
-        tag: 'en',
+        tag: 'en'
       },
     ];
 

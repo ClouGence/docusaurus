@@ -162,6 +162,7 @@ function execute(port, host) {
   });
 
   app.get(routing.feed(siteConfig), (req, res, next) => {
+    console.log('222222');
     res.set('Content-Type', 'application/rss+xml');
     const file = req.path.toString().split('blog/')[1].toLowerCase();
     if (file === 'atom.xml') {
@@ -173,6 +174,7 @@ function execute(port, host) {
   });
 
   app.get(routing.blog(siteConfig), (req, res, next) => {
+    console.log('1212121');
     // Regenerate the blog metadata in case it has changed. Consider improving
     // this to regenerate on file save rather than on page request.
     reloadMetadataBlog();
@@ -199,6 +201,7 @@ function execute(port, host) {
   });
 
   app.get(routing.page(siteConfig), (req, res, next) => {
+    console.log('333333');
     reloadSiteConfig();
     // Look for user-provided HTML file first.
     let htmlFile = req.path.toString().replace(siteConfig.baseUrl, '');

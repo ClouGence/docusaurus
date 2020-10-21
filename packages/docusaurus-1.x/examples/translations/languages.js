@@ -7,7 +7,7 @@
 
 const languages = [
   {
-    enabled: true,
+    enabled: false,
     name: 'English',
     tag: 'en',
   },
@@ -172,7 +172,7 @@ const languages = [
     tag: 'vi',
   },
   {
-    enabled: false,
+    enabled: true,
     name: '中文',
     tag: 'zh-CN',
   },
