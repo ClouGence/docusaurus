@@ -1,34 +1,32 @@
 {
   "docs": {
-    "Getting Started": [
-      "installation",
-      "site-preparation",
-      "site-creation",
-      "publishing",
-      "docker"
+    "产品介绍": [
+      "product_intro",
+      "product_nouns",
+      "product_advantage",
+      "product_func",
+      "product_arch",
+      "product_price",
+      "product_spec_perf"
     ],
-    "Guides": [
-      "adding-blog",
-      "custom-pages",
-      "search",
-      "navigation",
-      "translation",
-      "versioning"
+    "快速上手": [
+      "quick_start"
     ],
-    "API": [
-      "commands",
-      "doc-markdown",
-      "api-pages",
-      "site-config"
-    ]
-  },
-  "tutorial": {
-    "Tutorial": [
-      "tutorial-setup",
-      "tutorial-create-new-site",
-      "tutorial-create-pages",
-      "tutorial-publish-site",
-      "tutorial-version"
+    "操作手册": [
+      "aliyun_ram_sts_auth",
+      "create_dingding_group",
+      "add_worker_aliyun_ecs",
+      "add_worker_self_maintain",
+      "add_aliyun_ds",
+      "add_self_maintain_ds",
+      "create_data_job"
+    ],
+    "参考文档": [
+      "error_code",
+      "region_mapping"
+    ],
+    "商业协议": [
+      "sla"
     ]
   }
 }
