@@ -2,6 +2,7 @@
   "docs": {
     "产品介绍": [
       "product_intro",
+      "product_nouns",
       "product_advantage",
       "product_func",
       "product_arch",
@@ -20,8 +21,10 @@
       "add_self_maintain_ds",
       "create_data_job"
     ],
+    "数据同步": [
+      "mysql_es_link"
+    ],
     "参考文档": [
-      "product_nouns",
       "error_code",
       "region_mapping"
     ],

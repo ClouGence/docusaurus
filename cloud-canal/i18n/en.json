@@ -32,6 +32,9 @@
       "product_arch": {
         "title": "产品架构"
       },
+      "mysql_es_link": {
+        "title": "MySQL同步至ElasticSearch任务创建"
+      },
       "product_advantage": {
         "title": "产品优势"
       },
@@ -236,6 +239,7 @@
       "产品介绍": "产品介绍",
       "快速上手": "快速上手",
       "操作手册": "操作手册",
+      "数据同步": "数据同步",
       "参考文档": "参考文档",
       "商业协议": "商业协议",
       "Getting Started": "Getting Started",
