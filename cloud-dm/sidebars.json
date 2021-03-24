@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "产品介绍": [
+      "product_intro",
+      "product_nouns",
+      "product_advantage",
+      "product_func",
+      "product_arch"
+    ],
+    "快速上手": [
+      "quick-start"
+    ],
+    "操作手册": [
+      "add_worker_aliyun_ecs",
+      "add_worker_self_maintain",
+      "add_aliyun_ds",
+      "add_self_maintain_ds",
+      "role",
+      "subaccount",
+      "op_password",
+      "sql_precheck_rule",
+      "sql_query_page",
+      "ticket_create"
+    ],
+    "系统对接": [
+      "dingtalk_setting"
+    ],
+    "参考文档": [
+      "sql_type_support",
+      "tx_support"
+    ],
+    "商业协议": [
+      "sla"
+    ]
+  }
+}
