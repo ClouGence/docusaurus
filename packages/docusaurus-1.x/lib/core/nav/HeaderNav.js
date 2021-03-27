@@ -320,13 +320,17 @@ class HeaderNav extends React.Component {
               </a>
             )}
             <div className="home-header-menu">
+              {/*<span className="home-header-menu-item">*/}
+              {/*  <a*/}
+              {/*    href="https://www.clougence.com/">首页</a>*/}
+              {/*</span>*/}
               <span className="home-header-menu-item">
                 <a
-                  href="https://www.clougence.com/">首页</a>
+                  href="https://www.clougence.com">CloudCanal</a>
               </span>
               <span className="home-header-menu-item">
                 <a
-                  href="https://www.clougence.com/home/cloudCanal">产品介绍</a>
+                  href="https://www.clougence.com/home/cloudDM">CloudDM</a>
               </span>
               <span className="home-header-menu-item">
                 <a
@@ -336,18 +340,25 @@ class HeaderNav extends React.Component {
                 <a
                 href="https://www.clougence.com/home/about">关于我们</a>
               </span>
+              <span className="home-header-menu-item">
+                <a
+                  href="http://www.askcug.com/">问答社区</a>
+              </span>
             </div>
             <div className="home-header-action">
               <a className="home-header-menu-item-active">文档</a>
-              <a className="btn" href="https://cloudcanal.clougence.com/data/job/list">
-              免费体验CloudCanal
-            </a>
+            {/*  <a className="btn" href="https://cloudcanal.clougence.com/data/job/list">*/}
+            {/*  免费体验CloudCanal*/}
+            {/*</a>*/}
+              <a className="btn" href="https://clouddm.clougence.com">
+                免费体验CloudDM
+              </a>
         </div>
             {/*{this.renderResponsiveNav()}*/}
           </header>
         </div>
       </div>
-    );
+    );s
   }
 }
 
