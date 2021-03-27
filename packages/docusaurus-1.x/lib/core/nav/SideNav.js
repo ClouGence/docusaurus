@@ -130,6 +130,10 @@ class SideNav extends React.Component {
   render() {
     return (
       <nav className="toc">
+        <div>
+          <p className="product-header">CloudDM</p>
+          {/*<p className="product-header">CloudCanal</p>*/}
+        </div>
         <div className="toggleNav">
           <section className="navWrapper wrapper">
             <div className="navBreadcrumb wrapper">

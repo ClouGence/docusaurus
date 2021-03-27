@@ -47,11 +47,14 @@
       "sla": {
         "title": "服务等级协议(SLA)"
       },
+      "sql_execute": {
+        "title": "SQL执行"
+      },
       "sql_precheck_rule": {
         "title": "预检规则管理"
       },
       "sql_query_page": {
-        "title": "操作查询控制台"
+        "title": "查询控制台"
       },
       "sql_type_support": {
         "title": "目前支持的SQL类型"
@@ -60,10 +63,13 @@
         "title": "子账号管理"
       },
       "ticket_create": {
+        "title": "工单创建"
+      },
+      "ticket_manager": {
         "title": "工单管理"
       },
       "tx_support": {
-        "title": "事务的支持"
+        "title": "事务执行"
       },
       "version-1.10.x/version-1.10.x-commands": {
         "title": "CLI Commands"
@@ -243,7 +249,6 @@
       "快速上手": "快速上手",
       "操作手册": "操作手册",
       "系统对接": "系统对接",
-      "参考文档": "参考文档",
       "商业协议": "商业协议",
       "Getting Started": "Getting Started",
       "Guides": "Guides",

@@ -4,8 +4,7 @@
       "product_intro",
       "product_nouns",
       "product_advantage",
-      "product_func",
-      "product_arch"
+      "product_func"
     ],
     "快速上手": [
       "quick-start"
@@ -20,14 +19,13 @@
       "op_password",
       "sql_precheck_rule",
       "sql_query_page",
-      "ticket_create"
+      "sql_execute",
+      "tx_support",
+      "ticket_create",
+      "ticket_manager"
     ],
     "系统对接": [
       "dingtalk_setting"
-    ],
-    "参考文档": [
-      "sql_type_support",
-      "tx_support"
     ],
     "商业协议": [
       "sla"
