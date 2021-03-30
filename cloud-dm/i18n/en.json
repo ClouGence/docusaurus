@@ -17,6 +17,9 @@
       "add_worker_self_maintain": {
         "title": "添加机器(自建)"
       },
+      "aliyun_ram_auth": {
+        "title": "阿里云权限申请"
+      },
       "dingtalk_setting": {
         "title": "对接钉钉审批"
       },

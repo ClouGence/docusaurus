@@ -131,8 +131,8 @@ class SideNav extends React.Component {
     return (
       <nav className="toc">
         <div>
-          <p className="product-header">CloudDM</p>
-          {/*<p className="product-header">CloudCanal</p>*/}
+          {/*<p className="product-header">CloudDM</p>*/}
+          <p className="product-header">CloudCanal</p>
         </div>
         <div className="toggleNav">
           <section className="navWrapper wrapper">

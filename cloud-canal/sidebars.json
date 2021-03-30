@@ -13,7 +13,7 @@
       "quick_start"
     ],
     "操作手册": [
-      "aliyun_ram_sts_auth",
+      "aliyun_ram_auth",
       "create_dingding_group",
       "add_worker_aliyun_ecs",
       "add_worker_self_maintain",

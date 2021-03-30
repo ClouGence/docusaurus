@@ -10,6 +10,7 @@
       "quick-start"
     ],
     "操作手册": [
+      "aliyun_ram_auth",
       "add_worker_aliyun_ecs",
       "add_worker_self_maintain",
       "add_aliyun_ds",

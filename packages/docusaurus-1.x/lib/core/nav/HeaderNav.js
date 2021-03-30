@@ -347,18 +347,18 @@ class HeaderNav extends React.Component {
             </div>
             <div className="home-header-action">
               <a className="home-header-menu-item-active">文档</a>
-            {/*  <a className="btn" href="https://cloudcanal.clougence.com/data/job/list">*/}
-            {/*  免费体验CloudCanal*/}
-            {/*</a>*/}
-              <a className="btn" href="https://clouddm.clougence.com">
-                免费体验CloudDM
-              </a>
+              <a className="btn" target="_blank" href="https://cloudcanal.clougence.com/data/job/list">
+              免费体验CloudCanal
+            </a>
+              {/*<a className="btn" target="_blank" href="https://clouddm.clougence.com">*/}
+              {/*  免费体验CloudDM*/}
+              {/*</a>*/}
         </div>
             {/*{this.renderResponsiveNav()}*/}
           </header>
         </div>
       </div>
-    );s
+    );
   }
 }
 

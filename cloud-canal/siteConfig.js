@@ -39,12 +39,12 @@ const siteConfig = {
   translationRecruitingLink: 'https://crowdin.com/project/docusaurus',
   copyright: `Copyright © ${new Date().getFullYear()} ClouGence Inc.`,
   usePrism: ['jsx'],
-  highlight: {
-    theme: 'atom-one-dark',
-  },
+  // highlight: {
+  //   theme: 'atom-one-dark',
+  // },
   scripts: [
-    'https://buttons.github.io/buttons.js',
-    'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    '/js/buttons.js',
+    '/js/clipboard.min.js',
     '/js/code-blocks-buttons.js',
   ],
   gaTrackingId: 'UA-44373548-31',
